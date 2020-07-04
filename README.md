@@ -6,35 +6,17 @@
 
 ### Queue Exercise ###
 
-**Basic Exercise:**
+## ERSTE SCHRITTE - ÜBUNG ANHAND EINER QUEUE1 ##
 
-- implement test methods for StringQueue
-- try to get 100% Test Coverage
-
-the final class structure should be
-
-- 1 test class
-- 1 source class
-
-*Only Basic Exercise necessary for final exercise in summer term 2019*
-
-**Extended Exercise:**
-
-- create Integer Queue Implementation (new class)
-- implement test methods for IntQueue
-- try to get 100% Test Coverage
-
-the final class structure should be
-
-- 2 test classes
-- 2 source classes
-
-**Advanced Exercise:**
-
-- create new Abstract Class with Generics
-- implement both 
-
-the final class structure should be
-
-- 2 test classes
-- ONLY 1 source class
+- [x] Projektverzeichnis gleichzeitig das root Verzeichnis des Git
+Repositories
+- [x] Taskliste erstellen 
+- [] Erweitern Sie diese Taskliste Schritt für Schritt. Nach Erledigung der jeweiligen
+Aufgaben
+- [] Labreport parallel während der Ausarbeitung 
+- [] Vermerken Sie das GitHub Repository im Labreport
+- [] löschen Sie das Projekt erst nach Beendigung der LV
+ ## MAVEN & POM ##
+ - [x] Meta-Informationen ink user image (Soufiane Khadiri)
+ ## IMPLEMENTIERUNG & KOMMENTARE ##
+ - [x] Finden Sie die drei Fehler und korrigieren Sie diese
