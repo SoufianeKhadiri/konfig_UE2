@@ -12,6 +12,8 @@
   <url>https://github.com/SoufianeKhadiri/konfig_UE2.git</url>
 
   <developers>
+  
+    <!-- Soufiane Khadiri -->
     <developer>
       <id>SoufianeKhadiri</id>
       <name>Soufiane Khadiri</name>
@@ -26,9 +28,26 @@
         <picUrl>https://user-images.githubusercontent.com/62706100/86494439-73368e80-bd75-11ea-9759-60a2d6e83a8d.jpg</picUrl>
       </properties>
     </developer>
-  <!-- add your developer block -->
+    
+   <!-- Robert Zavaczki -->
+    <developer>
+      <id>RobertZavaczki</id>
+      <name>Robert Zavaczki</name>
+      <email>robert.zavaczki@edu-fh.joanneum.at</email>
+      <organization>FH JOANNEUM GmbH</organization>
+      <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+      <roles>
+        <role>Student</role>
+      </roles>
+      <timezone>Europe/Vienna</timezone>
+      <properties>
+        <picUrl>https://user-images.githubusercontent.com/29379756/86520049-10aac480-be41-11ea-98d4-7bc1593b5cbb.jpg</picUrl>
+      </properties>
+    </developer>
+
 
   </developers>
+  
  <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.comiler.release>11</maven.comiler.release>
