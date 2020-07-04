@@ -13,9 +13,9 @@ See the task list for more information.
 
 - [x] create new repository for this project, send invitations
 - [x] initialize git locally in the root directory of the project
-- [ ] edit Pom.xml with repository address and developers
-- [ ] find and fix bugs in the .class files
-- [ ] implement the queue with so that it works with generics
+- [x] edit Pom.xml with repository address and developers
+- [x] find and fix bugs in the .class files
+- [ ] implement the queue so that it works with generics
 - [ ] write junit tests for the fixed class, the generic version with String and other classes
 - [ ] document your implementation as javaDoc and as maven site
 - [ ] update task list and lab report regularly
