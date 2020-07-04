@@ -20,3 +20,5 @@ Aufgaben
  - [x] Meta-Informationen ink user image (Soufiane Khadiri)
  ## IMPLEMENTIERUNG & KOMMENTARE ##
  - [x] Finden Sie die drei Fehler und korrigieren Sie diese
+ - [x] neue Implementierung, die mit
+unterschiedlichen Klassen / Datentypen funktioniert (Generics)

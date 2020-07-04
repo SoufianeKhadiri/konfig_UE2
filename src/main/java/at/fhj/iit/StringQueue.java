@@ -77,15 +77,15 @@ public class StringQueue implements IQueue {
 // a main method to testing
   public static void main (String []args ){
    StringQueue sq = new StringQueue(5);
-
+//
 //    sq.offer("b");
 //    sq.offer("c");
 //    sq.offer("d");
 //    sq.offer("e");
 //    sq.offer("f");
 //    sq.offer("g");
-
-   // System.out.println(sq.peek());
+//
+//    System.out.println(sq.element());
 
 
 
