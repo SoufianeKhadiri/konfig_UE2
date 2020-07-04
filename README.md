@@ -6,17 +6,16 @@
 
 ### Queue Exercise ###
 
-## ERSTE SCHRITTE - ÜBUNG ANHAND EINER QUEUE1 ##
+This is an exercise project whereby students at FH-JOANNEUM use technologies like git(hub), maven, junit to solve some bugs related to the implementation of a queue and make an own implementation, that can use generic classes.
 
-- [x] Projektverzeichnis gleichzeitig das root Verzeichnis des Git
-Repositories
-- [x] Taskliste erstellen 
-- [] Erweitern Sie diese Taskliste Schritt für Schritt. Nach Erledigung der jeweiligen
-Aufgaben
-- [] Labreport parallel während der Ausarbeitung 
-- [] Vermerken Sie das GitHub Repository im Labreport
-- [] löschen Sie das Projekt erst nach Beendigung der LV
- ## MAVEN & POM ##
- - [x] Meta-Informationen ink user image (Soufiane Khadiri)
- ## IMPLEMENTIERUNG & KOMMENTARE ##
- - [x] Finden Sie die drei Fehler und korrigieren Sie diese
+See the task list for more information.
+
+
+- [x] create new repository for this project, send invitations
+- [x] initialize git locally in the root directory of the project
+- [ ] edit Pom.xml with repository address and developers
+- [ ] find and fix bugs in the .class files
+- [ ] implement the queue with so that it works with generics
+- [ ] write junit tests for the fixed class, the generic version with String and other classes
+- [ ] document your implementation as javaDoc and as maven site
+- [ ] update task list and lab report regularly
