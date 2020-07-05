@@ -13,6 +13,9 @@ public class StringQueue implements IQueue {
   private List<String> elements = new ArrayList<String>();
   private int maxSize = 5;
 
+  public  StringQueue(){
+
+  }
   public StringQueue(int maxsize) {
     maxSize = maxSize;
   }
@@ -60,7 +63,7 @@ public class StringQueue implements IQueue {
     if (elements.size() > 0)
       element = elements.get(0);
     else
-      element = null; //  element must null wenn elements.size < 0 (empty queue )
+      element = null; //  element must null when elements.size < 0 (empty queue )
 
 
     return element;
@@ -75,9 +78,9 @@ public class StringQueue implements IQueue {
     return element;
   }
 // a main method to testing
-  public static void main (String []args ){
-   StringQueue sq = new StringQueue(5);
-//
+//  public static void main (String []args ){
+//   StringQueue sq = new StringQueue(5);
+////
 //    sq.offer("b");
 //    sq.offer("c");
 //    sq.offer("d");
@@ -92,5 +95,5 @@ public class StringQueue implements IQueue {
 
 
 
-  }
+//  }
 }
