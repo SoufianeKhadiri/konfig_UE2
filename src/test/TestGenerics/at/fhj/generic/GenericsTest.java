@@ -1,45 +1,33 @@
-package at.fhj.iit;
-
-import static org.junit.jupiter.api.Assertions.*;
+package at.fhj.generic;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.awt.*;
-import java.util.List;
-import java.util.NoSuchElementException;
+import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class StringQueueTest {
+public class GenericsTest<MyType> {
 
-    StringQueue sq = new StringQueue() ;
 
-    @Before
-    public void setUp()throws Exception{
-        sq = new StringQueue();
-    }
+    Generics generics = new Generics();
 
-    @After
-    public void tearDown()throws Exception{
-
-    }
     @Test
     public void offer(){
-        Boolean result =  sq.offer("a");
+        Boolean result =  generics.offer((MyType) "a");
         assertEquals(true,result);
     }
 
     @Test
     public void poll(){
-        String result = sq.poll();
+        MyType result = (MyType) generics.poll();
         assertEquals(null,result);
     }
 
     @Test
     public void remove() {
         try {
-            String result = sq.remove();
+            MyType result = (MyType) generics.remove();
 
         } catch (Exception ex) {
             assertEquals("there's no element any more",ex.getMessage());
@@ -48,20 +36,17 @@ class StringQueueTest {
 
     @Test
     public void peek(){
-        String result =  sq.peek();
+        MyType result = (MyType) generics.peek();
         assertEquals(null,result);
     }
 
     @Test
     public void element(){
         try {
-            String result = sq.element();
+            MyType result = (MyType) generics.element();
 
         } catch (Exception ex) {
             assertEquals("there's no element any more",ex.getMessage());
         }
     }
-
-
 }
-
