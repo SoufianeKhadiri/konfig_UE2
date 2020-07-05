@@ -4,15 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-// there's some Bugs included, try to debug the code and fix the Bugs
-// there are different Bugs, wrong implementation, typos, ...
-// write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
-
+/**
+ * 
+ * this implementation of the queue data structure works only for the String type.
+ * for a universal implementation please refer to at.fhj.generic Generics.java and its interface IGenerics.java
+ * this class had to be debugged first, see more specific notes down below
+ *
+ */
 public class StringQueue implements IQueue {
 
+  // attributes	
   private List<String> elements = new ArrayList<String>();
   private int maxSize = 5;
 
+  // constructors
   public  StringQueue(){
 
   }
@@ -20,7 +25,12 @@ public class StringQueue implements IQueue {
     maxSize = maxSize;
   }
 
-  // this method is correct
+  // methods
+  // this method was correct
+  /**
+   * @param obj
+   * adds a string to queue, else (if queue is full) returns false
+   */
   @Override
   public boolean offer(String obj) {
     if (elements.size() != maxSize)
@@ -30,24 +40,33 @@ public class StringQueue implements IQueue {
 
     return true;
   }
-// here are some editing
+  
+// had to be debugged
   @Override
+  /**
+   * this returns the first element and "gets it out" of the queue (deletes it)
+   * if queue is empty, null is returned
+   */
   public String poll() {
 
     String element = peek();
 
     if (elements.size() == 0) {
-      // making change element must return null wen the queue empty
+      // making change element must return null when the queue empty
        element = null;
     }else {
-      element = ""; // wen the queue not empty we delete it with a empty String
+      element = ""; // when the queue not empty we delete it with a empty String
 
     }
 
     return element;
   }
-// here some changes
+  
+//had to be debugged
   @Override
+  /**
+   * same as the above, but a NoSuchElementException is returned instead of null, when queue is empty
+   */
   public String remove() {
     String element = poll();
     element = "";
@@ -56,20 +75,28 @@ public class StringQueue implements IQueue {
 
     return element;
   }
-// here some changes
+  
+//had to be debugged
   @Override
+  /**
+   * just returns the first element if there is one, else null is returned
+   */
   public String peek() {
     String element;
     if (elements.size() > 0)
       element = elements.get(0);
     else
-      element = null; //  element must null when elements.size < 0 (empty queue )
+      element = null; //  (empty queue )
 
 
     return element;
   }
-// some changes
+  
+//had to be debugged
   @Override
+  /**
+   * same as above, but instead of null, the NoSuchElementException is returned
+   */
   public String element() {
     String element = peek();
     if (elements.size() == 0)// changing just the if statement
@@ -77,7 +104,8 @@ public class StringQueue implements IQueue {
 
     return element;
   }
-// a main method to testing
+  
+// a main method for testing
 //  public static void main (String []args ){
 //   StringQueue sq = new StringQueue(5);
 ////

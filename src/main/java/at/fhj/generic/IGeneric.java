@@ -1,5 +1,12 @@
 package at.fhj.generic;
 
+/**
+ *
+ * @param <MyType>
+ * interface for the queue data type, that works universally (is generic)
+ * 
+ * 
+ */
 public interface IGeneric <MyType> {
 
         /**

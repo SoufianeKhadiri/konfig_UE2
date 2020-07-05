@@ -1,5 +1,11 @@
 package at.fhj.iit;
 
+/**
+ * 
+ * interface for the queue data type, that only works for Strings
+ * for the universal (generic) interface of a queue, please refer to at.fhj.generic Generics.java and its interface IGenerics.java
+ *
+ */
 public interface IQueue {
   /**
    * Adds the element obj to the queue.
