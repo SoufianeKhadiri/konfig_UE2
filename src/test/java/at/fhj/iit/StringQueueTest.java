@@ -19,12 +19,20 @@ import java.util.NoSuchElementException;
  */
 class StringQueueTest {
 
-    private StringQueue sq = new StringQueue();
+    StringQueue sq = new StringQueue() ;
+
+
+
+    @BeforeEach
+    public void setUp()throws Exception{
+        sq = new StringQueue();
+    }
 
 
     @Test
     /**
-     * tests the offer method
+     * @DisplayName("Testing StringQueue offer method")
+     * @return
      */
     public void offer(){
         Boolean result =  sq.offer("a");
@@ -33,7 +41,8 @@ class StringQueueTest {
 
     @Test
     /**
-     * tests the poll method
+     * @DisplayName("Testing StringQueue poll method")
+     * @return
      */
     public void poll(){
         String result = sq.poll();
@@ -42,7 +51,8 @@ class StringQueueTest {
 
     @Test
     /**
-     * tests the remove method
+     * @DisplayName("Testing StringQueue remove method")
+     * @return
      */
     public void remove() {
         try {
@@ -55,7 +65,8 @@ class StringQueueTest {
 
     @Test
     /**
-     * tests the peek method
+     * @DisplayName("Testing StringQueue peek method")
+     * @return
      */
     public void peek(){
         String result =  sq.peek();
@@ -64,7 +75,8 @@ class StringQueueTest {
 
     @Test
     /**
-     * tests the element method
+     * @DisplayName("Testing StringQueue element method")
+     * @return
      */
     public void element(){
         try {
