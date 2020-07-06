@@ -1,10 +1,9 @@
 package at.fhj.generic;
 
-import org.junit.After;
-import org.junit.Before;
+
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GenericsTest<MyType> {

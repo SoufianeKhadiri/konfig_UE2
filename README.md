@@ -16,6 +16,6 @@ See the task list for more information.
 - [x] find and fix bugs in the .class files
 - [x] implement the queue so that it works with generics
 - [x] write junit tests for the fixed class, the generic version with String and other classes
-- [ ] document your implementation as javaDoc and as maven site
-- [ ] update task list and lab report regularly
+- [x] document your implementation as javaDoc and as maven site
+- [x] update task list and lab report regularly
 
